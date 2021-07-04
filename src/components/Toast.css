@@ -1,0 +1,45 @@
+/*src/components/Toast.css*/
+.toast000 {
+    position: fixed;
+    right: 0;
+    margin-top: 20px;
+    display: grid;
+    justify-items: end;
+}
+
+.toast111 {
+    margin-right: -1500px;
+    opacity: 0;
+}
+
+.toast111.open {
+    margin-right: 0;
+    opacity: 0.98;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-duration: 0.3s;
+
+    -webkit-animation-name: toast111; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+    animation-name: toast111;
+    animation-duration: 0.2s;
+}
+
+.toast111.close {
+    margin-right: -1500px;
+    opacity: 0;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-duration: 1s;
+
+    -webkit-animation-name: toast111; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: toast111;
+    animation-duration: 0.5s;
+}

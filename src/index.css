@@ -1,0 +1,6 @@
+/* src/index.css */
+@import '~pretty-checkbox/dist/pretty-checkbox.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
