@@ -897,8 +897,47 @@ yarn-error.log*
 
 *.idea/workspace.xml
 *.idea/dataSources
+*.idea/dataSources/
 *.idea/shelf
+*.idea/shelf/
 
 *package-lock.json
 *yarn.lock
+*.firebaserc
+*.firebase/
+```
+
+# Firebase Hosting
+
+```shell
+ npm i -g firebase-tools
+ firebase login
+ firebase init hosting
+ # ? What do you want to use as your public directory? build
+ # ? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+ # ? Set up automatic builds and deploys with GitHub? No
+ # ? File public/index.html already exists. Overwrite? No
+ yarn build
+ firebase deploy --only hosting
+```
+
+- firebase.json
+
+```json
+{
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
 ```

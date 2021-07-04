@@ -24,7 +24,11 @@ yarn-error.log*
 
 *.idea/workspace.xml
 *.idea/dataSources
+*.idea/dataSources/
 *.idea/shelf
+*.idea/shelf/
 
 *package-lock.json
 *yarn.lock
+*.firebaserc
+*.firebase/
