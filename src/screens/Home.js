@@ -17,7 +17,7 @@ export default function Home() {
 
   return <div>
     <button
-      className={"inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"}
+      className="inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"
       onClick={() => {
         dispatch(set_toast_status(2));
         dispatch(set_toast_message(`Please waiting ...`));
@@ -31,7 +31,7 @@ export default function Home() {
     </button>
 
     <button
-      className={"inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"}
+      className="inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"
       onClick={() => {
         dispatch(set_toast_status(2));
         dispatch(set_toast_message(`Please waiting ...`));
@@ -45,7 +45,7 @@ export default function Home() {
     </button>
 
     <button
-      className={"inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"}
+      className="inline-block text-center m-2 bg-blue-500 hover:bg-blue-700 focus:bg-green-700 text-white font-bold py-2 px-4 rounded"
       onClick={() => {
         history.push("login")
       }}>
