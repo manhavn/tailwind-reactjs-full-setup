@@ -27,6 +27,8 @@ yarn-error.log*
 *.idea/dataSources/
 *.idea/shelf
 *.idea/shelf/
+*.idea/codeStyles
+*.idea/codeStyles/
 
 *package-lock.json
 *yarn.lock
